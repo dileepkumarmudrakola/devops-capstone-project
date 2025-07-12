@@ -1,3 +1,11 @@
+---
+name: 🧩 User Story
+about: Create a user story using Agile format
+title: "[User Story] <brief title here>"
+labels: user story
+assignees: ''
+---
+
 **As a** [role]  
 **I need** [function]  
 **So that** [benefit]  
