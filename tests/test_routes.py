@@ -156,7 +156,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, status.HTTP_200_OK)
         updated_account = resp.get_json()
         self.assertEqual(updated_account["name"], "Something Known")
-    
+
     def test_update_account_not_found(self):
         """It should not Update an Account that is not found"""
         fake_account = {
@@ -173,7 +173,6 @@ class TestAccountService(TestCase):
         account = self._create_accounts(1)[0]
         resp = self.client.delete(f"{BASE_URL}/{account.id}")
         self.assertEqual(resp.status_code, status.HTTP_204_NO_CONTENT)
-    
 
     def test_get_account_list(self):
         """It should Get a list of Accounts"""
